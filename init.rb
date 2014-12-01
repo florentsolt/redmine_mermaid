@@ -8,7 +8,9 @@ end
 
 
 Redmine::WikiFormatting::Macros.macro :diagram do |obj, args, text|
-  "<div class='mermaid'>\n#{text}\n</div>".html_safe
+  ("<div class='mermaid'>\n#{text}\n</div>" +
+    "<script>if (document.readyState === 'complete') { mermaid.init(); }</script>"
+    ).html_safe
 end
 
 class MermaidViewListener < Redmine::Hook::ViewListener
