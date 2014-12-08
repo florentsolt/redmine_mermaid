@@ -1,3 +1,3 @@
 #/bin/bash
 cd `dirname $0`
-wget 'http://www.sveido.com/mermaid/dist/mermaid.full.min.js' -O mermaid.full.min.js
+wget 'https://github.com/knsv/mermaid/raw/master/dist/mermaid.full.min.js' -O mermaid.full.min.js
