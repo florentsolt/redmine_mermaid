@@ -17,7 +17,7 @@ class MermaidViewListener < Redmine::Hook::ViewListener
   # Adds javascript and stylesheet tags
   def view_layouts_base_html_head(context)
     javascript_include_tag("mermaid.min.js", :plugin => "redmine_mermaid") +
-    stylesheet_link_tag("mermaid.css", :plugin => "redmine_mermaid") +
+    stylesheet_link_tag("mermaid.css", :plugin => "redmine_mermaid")
   end
 end
 
